@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recreate LinkedIn and YouTube Icons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        .logos {
+            display: flex;
+            align-items: center;
+            gap: 2vw;
+        }
+
+        .youtube-play-button {
+            width: 15rem;
+            height: 10rem;
+            background-color: #FF0000;
+            border-radius: 2rem / 9rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .youtube-play-button:before {
+            content: "";
+            position: absolute;
+            background-color: #ff0000;
+            z-index: -1;
+            width: 13rem;
+            height: 11.5rem;
+            border-radius: 25rem / 3rem;
+        }
+
+        .youtube-play-button .triangle {
+            width: 0;
+            height: 0;
+            border-left: 4vw solid white;
+            border-top: 2vw solid transparent;
+            border-bottom: 2vw solid transparent;
+        }
+
+        .linkedin-logo {
+            width: 10rem;
+            height: 10rem;
+            background-color: #0077B5;
+            border-radius: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .linkedin-logo:before {
+            content: "in";
+            font-size: 8vw;
+            color: white;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="logos">
+        
+        <div class="linkedin-logo">
+        </div>
+        <div class="youtube-play-button">
+            <div class="triangle"></div>
+        </div>
+    </div>
+</body>
+
+</html>
